@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_driver_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_driver_name"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/img_driver_profile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_driver_ratting"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/img_driver_profile"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/txt_driver_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_driver_rate"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/img_driver_profile"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/txt_driver_ratting"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCEPT"
+        android:id="@+id/btnRateAccpet"
+        android:layout_below="@+id/txt_driver_rate"
+        />
+
+    <!--<TextView
+        android:id="@+id/leftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#212121"
+        android:background="@drawable/left_background"
+        android:elevation="2dp"
+        />
+
+
+    <TextView
+        android:id="@+id/rightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/right_background"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:elevation="2dp"/>
+-->
+
+
+</RelativeLayout>

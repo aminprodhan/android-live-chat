@@ -1,0 +1,143 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab_maincontent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:background="@android:color/transparent">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    android:minHeight="?attr/actionBarSize"
+                    android:layout_width="match_parent"
+                    app:titleTextColor="@color/grey"
+                    android:background="@android:color/white"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_my_location_black_24dp"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp"
+                app:layout_anchor="@id/map"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="66dp"
+                app:backgroundTint="#ffffff"
+                app:layout_anchorGravity="bottom|right|end"
+                >
+
+            </android.support.design.widget.FloatingActionButton>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </FrameLayout>
+    <ProgressBar
+            android:layout_gravity="center|center_horizontal"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateOnly="true"
+            android:id="@+id/progressBar"
+            android:indeterminate="true"/>
+    <!--
+        <include layout="@layout/set_pickup_location"></include>
+    -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bottom_sheet_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Service"
+            android:textStyle="bold"
+          />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_service_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:scrollbars="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:visibility="gone"
+            android:id="@+id/lay_ride_confirm">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnDirect"
+                android:text="Direct"
+                android:background="#436243" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnRideConfirm"
+                android:text="Bidding"
+                android:background="#0074E4" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom_sheet_location_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_sheet_location_confirm"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:visibility="gone">
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLocationConfirm"
+            />
+    </RelativeLayout>
+    <include layout="@layout/ride_bottom_sheet"></include>
+
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,78 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="amin_chats.cursor.aminchats.MapsActivity" >
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+         />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:hint="Enter Place Here"/>
+
+
+
+    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:id="@+id/countNearestDriver"
+                            android:layout_above="@+id/btnBiddingNow"
+                            android:textColor="#871349"
+                            />
+                        <TextView android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="Finding......"
+                            android:visibility="gone"
+                            android:id="@+id/searchText"
+                            android:layout_above="@+id/btnFindDriver"
+                            android:textColor="#871349"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="Find Driver"
+                            android:id="@+id/btnFindDriver" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:visibility="gone"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/btnFindDriver"
+                            android:text="Bidding Now"
+                            android:textColor="#fff"
+                            android:background="#783"
+                            android:id="@+id/btnBiddingNow" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:visibility="gone"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/btnBiddingNow"
+                            android:text="Cancel"
+                            android:textColor="#fff"
+                            android:background="#581574"
+                            android:id="@+id/btnReqCancel" />
+                </RelativeLayout>
+</RelativeLayout>

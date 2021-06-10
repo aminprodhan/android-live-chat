@@ -1,0 +1,47 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab_maincontent"
+    android:fitsSystemWindows="true">
+    <ProgressBar
+        android:layout_gravity="center|center_horizontal"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:indeterminate="true"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_location_confirm"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_location_confirm"
+            android:text="Confirm"
+            />
+    </LinearLayout>
+    <include layout="@layout/rent_showing" />
+    <include layout="@layout/bottom_sheet_search_location" />
+    <include layout="@layout/driver_profile_ride" />
+    <include layout="@layout/bidding_list_showing"/>
+
+</android.support.design.widget.CoordinatorLayout>

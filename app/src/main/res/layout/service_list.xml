@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:id="@+id/ride_circle_active"
+            android:background="@drawable/circleshape"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:src="@drawable/ic_directions_car_white_24dp"
+                android:layout_width="35dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_url"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/cate_name"
+                android:layout_below="@+id/img_url"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/rent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>

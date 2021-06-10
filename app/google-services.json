@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1037076434065",
+    "firebase_url": "https://geofire-694c7.firebaseio.com",
+    "project_id": "geofire-694c7",
+    "storage_bucket": "geofire-694c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037076434065:android:4a1b8917f5254e0a66c330",
+        "android_client_info": {
+          "package_name": "amin_chats.cursor.aminchats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037076434065-c6srrbvcom10vr2mr8q8gfuscq7vomja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "amin_chats.cursor.aminchats",
+            "certificate_hash": "b4aeb1aacc165fe99582d910f17df6841c6d5a31"
+          }
+        },
+        {
+          "client_id": "1037076434065-kludfp35g6eqqpuugppib9tfstnor4ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvUrwAsBJuwmFDWptQxL8Me-9BVVf_Q7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037076434065-kludfp35g6eqqpuugppib9tfstnor4ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
